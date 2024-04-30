@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Cypress core workshop",
   "scripts": {
-    "cy:open": "./node_modules/.bin/cypress open --e2e --browser chrome",
-    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run",
     "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install",
     "start": "cd trelloapp && npm start",
     "trello": "cd trelloapp && npm start"
@@ -25,5 +25,6 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.3"
-  }
+  },
+  "main": "cypress.config.js"
 }
